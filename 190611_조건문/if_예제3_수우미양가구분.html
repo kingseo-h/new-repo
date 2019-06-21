@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>국영수 점수를 받아 평균을 내고 수우미양가 구분</title>
+    <script>
+        //prompt()함수로 각각 점수를 받아 변수에 저장하고 숫자로 바꿈
+        var input1 = prompt('국어점수를 입력해 주세요', '숫자');
+        var inputNumber1 = Number(input1);
+
+        var input2 = prompt('영어점수를 입력해 주세요', '숫자');
+        var inputNumber2 = Number(input2);
+
+        var input3 = prompt('수학점수를 입력해 주세요', '숫자');
+        var inputNumber3 = Number(input3);
+        //받은 숫자의 합과 나누기3(나누기 더 한 항의 수 로 쓰고싶은데 어케쓰지..)으로 평균을 구하고 변수에 담음
+        var average = (inputNumber1 + inputNumber2 + inputNumber3) / 3
+
+        //100과 같거나 작거나 90과 크거가 같으면 수 이런식으로 수우미양가 기준을 넣어 if else 를 사용
+        if (average <= 100 && average >= 90) {
+            alert(average + ': 수');
+        } else if (average < 90 && average >= 80) {
+            alert(average + ': 우');
+        } else if (average < 80 && average >= 70) {
+            alert(average + ': 미');
+        } else if (average < 70 && average >= 60) {
+            alert(average + ': 양');
+        } else {
+            alert(average + ': 가');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

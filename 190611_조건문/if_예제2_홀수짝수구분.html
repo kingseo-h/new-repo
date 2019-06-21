@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>숫자를 받아 홀짝 구분</title>
+    <script>
+        var input = prompt('숫자를 입력해 주세요', '숫자');
+        var inputNumber = Number(input);
+        //조건문 시작
+        //0은 짝수도 홀수도 아니고 1은 홀수 2는 짝수
+        //받은 숫자가 0보다 크면 일단 정수로 구분 그리고 2로 나눠지면 짝수 나머지가 남으면 홀수 
+        if (inputNumber > 0 && inputNumber % 2 == 0) {
+            alert('짝수입니다.');
+        } else if (inputNumber > 0 && inputNumber % 2 > 0) {
+            alert('홀수입니다.');
+        } else if (inputNumber < 0) {
+            alert('정수를 입력하세요')
+        } else {
+            alert('0입니다.');
+        }
+    </script>
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

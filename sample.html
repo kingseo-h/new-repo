@@ -1,0 +1,27 @@
+<!-- event.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>event</title>
+<script type="text/javascript">
+	window.onload = function() {
+		var header = document.getElementById('header');
+
+		// header 객체에 onclick 이벤트 속성을 연결
+		header.onclick = function() {
+			alert('클릭');
+
+			// 이벤트를 제거, 한번만 실행이 됨
+			header.onclick = null;
+		}
+	};
+</script>
+</head>
+<body>
+	<h1 id="header">Click</h1>
+</body>
+</html>
+
+
+출처: https://gangzzang.tistory.com/entry/자바스크립트JavaScript-이벤트Event [갱짱.study]

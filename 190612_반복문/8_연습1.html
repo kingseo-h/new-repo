@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>수다쟁이, 대답에 따라 다양한 질문을 함, 잘있어하면 빠져나감</title>
+    <script>
+        var input = prompt('아무말이나 해봐', '대화')
+        //확인합니다.
+        //만약 받은 글자안에 안녕이 있으면 0이상이고 그렇다면 -1과 같지않다!가 참이되고 문장실행
+        if (input.indexOf('안녕') != -1) {
+            alert('안녕하세요');
+            //위의 문장이 아니라면 즉 안녕이 없다면 잘자 또는 잘 자 가 있는지 확인 true면 문장실행
+        } else if (input.indexOf('잘자') >= 0 || input.indexOf('잘 자') >= 0) {
+            //위의조건중 둘중하나라도 참이면 둘다 참, 논리합 연산자 ||
+            alert('안녕히주무세요');
+            //하고 종료 아니면 말하기 귀찮다 실행
+        } else {
+            alert('말하기귀찮다')
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

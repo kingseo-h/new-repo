@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <script type="text/javascript">
+      //11-6 이벤트 핸들러 안에서의 this키워드
+      /*window.onload = function(){
+        document.getElementById('header').onclick = function() {
+          alert(this);
+        };
+      };*/
+
+      //11-7 이벤트 발생 객체의 스타일 변화
+      /*window.onload = function(){
+        document.getElementById('header').onclick = function(){
+          this.style.color = 'orange';
+          this.style.backgroundColor = 'red';
+        };
+      };*/
+    </script>
+  </head>
+
+  <body>
+    <h1 id='header'>Click</h1>
+  </body>
+  </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //프롬프트를 에서 받은 정보를 input에 저장
+        var input = prompt('숫자를 입력하세요', '12345');
+
+        // input에 받은 것을 무조건 숫자로 변환       
+        var numberInput = Number(input);
+
+        // 변환된 것의 타입확인(당연히 숫자) : 받은 숫자가 뭔지 경고창에 출력
+        alert(typeof (numberInput) + ':' + numberInput);
+        //만약 입력받은 정보가 숫자가 아닌 문자열이라면 결과는
+        //number : NaN으로 출력 됨.
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>while 반복문</title>
+    <script>
+        //변수선언
+        var value = 0
+        //while 반복문
+        while (value < 5) {
+            alert(value + '번째 반복');
+            value++;
+        }
+
+        var startTime = new Date().getTime();
+
+        //while 반복문
+        while (new Date().getTime() < startTime + 1000) {
+            value++;
+        }
+        //출력
+        alert(value);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>계단 역</title>
+    <script>
+        var star = "";
+        /*첫번쨰 for문 
+        i=0가 10보다 작은 회차 즉 10번 동안 
+            두번째 for
+            i번째 줄에 *을 (j < i)가 true 동안 star변수에 * 주고 종료
+        줄바꿈하고 종료
+         */
+        for (var i = 0; i < 10; i++) {
+            for (var j = 0; j < i; j++) {
+                star += "*";
+            }
+            star += "\n";
+        }
+        alert(star)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

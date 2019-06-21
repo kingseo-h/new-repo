@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if</title>
+    <script>
+        //현재 시간의 오전 오후 구분
+        //변수선언
+        var date = new Date();
+        var hour = date.getHours();
+
+        //if조건문
+        if (hour < 12) {
+            //'hour<12가 참일때 실행됨.
+            alert('오전입니다.');
+        }
+        if (hour >= 12) {
+            //Hour >= 가 참일때 실행
+            alert('오후입니다.');
+        }
+        //현재 월의 상반기 하반기 구분
+        //변수선언
+        var date = new Date();
+        var month = date.getMonth();
+
+        //if조건문
+        if (month <= 6) {
+            //'hour<12가 참일때 실행됨.
+            alert('상반기입니다.');
+        }
+        if (month > 6) {
+            //Hour >= 가 참일때 실행
+            alert('하반기입니다.');
+        }
+        //현재 분이 30분 이전인지 이후인지 구분
+        //변수선언
+        var date = new Date();
+        var minutes = date.getMinutes();
+        document.write(minutes);
+        //if조건문
+        if (minutes <= 30) {
+            alert('30분 이전입니다.');
+        }
+        if (minutes > 30) {
+            alert('30분 이후입니다.');
+        }
+        //현재 분이 30분 이전인지 이후인지 구분
+        //변수선언
+        var date = new Date();
+        var seconds = date.getSeconds();
+        document.write(seconds);
+        //if조건문
+        if (seconds <= 30) {
+            alert('30초 이전입니다.');
+        }
+        if (seconds > 30) {
+            alert('30초 이후입니다.');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

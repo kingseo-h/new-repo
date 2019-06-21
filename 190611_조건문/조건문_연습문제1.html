@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var input = prompt('인사해보세요', '안녕 또는 잘자 또는 아무거나');
+
+        var output = input.indexOf('안녕');
+        var output2 = input.indexOf('잘');
+        //output이 0이면 뒷내용이 있다는 소리 -1 이면 없다는 소리
+
+        if (output >= 0) {
+            alert('안녕하세요');
+        } else if (output2 >= 0) {
+            alert('안녕히주무세요');
+        } else if (output < 0 && output2 < 0) {
+            alert('인사를 안하다니!?');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

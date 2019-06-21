@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>중첩조건문</title>
+    <script>
+        // 변수 선언
+        var date = new Date();
+        var hour = date.getHours();
+
+        // 중첩조건문
+        if (hour < 11) {
+            //hour < 11참 일때 실행함.
+            alert('아침먹을 시간입니다.');
+        } else {
+            //hour < 11이 거짓일때 실행
+            if (hour < 15) {
+                //hour < 15이 참일 때 실행
+                alert('점심 먹을 시간입니다.');
+            } else {
+                //hour < 15이 거짓일 때 실행
+                alert('저녁먹을 시간입니다.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
